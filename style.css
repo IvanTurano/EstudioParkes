@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-principal) var(--color-fondo);
+    
+}
+
+:root{
+    --color-principal: #0096c7;
+    --color-fondo: #1e232b;
+    --color-fondosecundario: #282f39;
+}
+
+#cerrar{
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.btn-responsive{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+}
+
+.texto-color{
+    color: var(--color-principal);
+}
+
+body{
+    color: #fff;
+    font-family: "Open Sans", sans-serif, system-ui;
+    background-color: var(--color-fondo);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    width: 85%;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img{
+    width: 190px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 19px;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.nav-bar ul li a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: color .1s ease;
+}
+
+.nav-bar ul li a:hover{
+    color: var(--color-principal);
+}
+
+.btn-nav__contacto{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-principal);
+    transition: transform .2s ease;
+}
+.btn-nav__contacto:hover{
+    transform: translateY(-2px);
+
+}
+
+.btn-nav__contacto a:hover{
+    color: #ccc !important;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(180deg, rgba(31, 35, 44, .7) 0%, #1e232b 100%), url(images/hero.webp);
+    background-size: cover;
+}
+
+.hero-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    
+}
+
+/*Hero*/
+
+.hero-titulo h1{
+    font-weight: 400;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 7rem;
+    color: var(--color-principal);
+    text-transform: uppercase;
+}
+
+.hero-titulo p{
+    margin-top: 10px;
+}
+
+/*Contenedor main*/
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*Especializades*/
+
+.especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 150px;
+}
+
+.especialidades h2{
+    font-size: 3rem;
+}
+
+.subtitulo-especialidades{
+    font-size: 1.5rem;
+}
+
+.tarjetas-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.tarjeta-especialidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    background-color: var(--color-fondosecundario);
+    box-shadow: 1px 1px 4px 2px rgba(255,255,255,0.04);
+    transition: transform .2s ease;
+}
+
+.tarjeta-especialidad:hover{
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 9px 2px rgba(255,255,255,0.10);
+}
+
+.tarjeta-titulo{
+    border-bottom: 1px solid var(--color-principal);
+    width: 100%;
+}
+
+.tarjeta-titulo h3 {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.tarjeta-descripcion{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid var(--color-principal);
+    height: 230px;
+}
+
+.tarjeta-descripcion p{
+    color: #bbb;
+}
+
+.tarjeta-boton{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.btn-tarjeta{
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: transform .2s ease;
+}
+
+.btn-tarjeta:hover{
+    transform: translateY(-1px);
+}
+
+/* OTRAS ESPECIALIDADES*/
+
+.otras-especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.otras-especialidades h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.sucesiones{
+    background-color: var(--color-fondosecundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sucesiones-container{
+    display: flex;
+    width: 80%;
+}
+
+.sucesiones-texto{
+    padding: 20px;
+}
+
+.sucesiones-texto h3 {
+    font-size: 2.4rem;
+    margin-top: 20px;
+}
+
+.sucesiones-texto p {
+    color: #bbb;
+}
+
+.sucesiones-imagen img{
+    width: 800px;
+    padding: 20px;
+}
+
+.accidentes-civiles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.accidentes-container{
+    display: flex;
+    width: 80%;
+}
+
+.accidentes-imagen img{
+    width: 750px;
+    padding: 20px;
+}
+
+.accidentes-texto{
+    padding: 20px;
+}
+
+.accidentes-texto h3 {
+    font-size: 2.4rem;
+    margin-top: 20px;
+}
+
+.accidentes-texto p {
+    color: #ccc;
+}
+
+/*Reseñas google maps*/
+
+
+.reseñas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.reseñas-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.reseñas-container img{
+    width: 200px;
+}
+
+.reseñas-container h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.tarjetas-reseñas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-reseña{
+    width: 360px;
+    background-color: var(--color-fondosecundario);
+    padding: 20px;
+    margin: 10px;
+}
+
+.tarjeta-reseña h3{
+    margin-bottom: 1px;
+    font-size: 1.7rem;
+}
+
+.tarjeta-reseña p{
+    font-size: .9rem;
+}
+
+.estrella{
+    font-size: 20px;
+    color: gold;
+}
+
+
+/*---------*/
+
+.dejanos-tuopinion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10px;
+    margin-top: 60px;
+    background-color: var(--color-fondosecundario);
+    width: 100%;
+}
+
+.dejanos-tuopinion h3{
+    font-size: 2.2rem;
+}
+
+.stars {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.star {
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.stars:hover .star {
+    color: gold; 
+}
+
+.star:hover, .star:hover ~ .star {
+    color: gray; 
+}
+
+.star:hover {
+    color: gold; 
+}
+
+/*----------*/
+
+.seccion-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.seccion-nosotros h2{
+    font-size: 2.7rem;
+    margin-bottom: 70px;
+}
+
+.tarjeta-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px 40px;
+    padding: 20px;
+    background-color: var(--color-fondosecundario);
+    box-shadow: 1px 1px 4px 2px rgba(255,255,255,0.04);
+    transition: transform .2s ease;
+}
+
+.tarjeta-nosotros:hover{
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 4px 2px rgba(255,255,255,0.10);
+}
+
+.tarjeta-nosotros img{
+    width: 60px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.tarjeta-nosotros p{
+    color: #bbb;
+}
+
+
+
+/*-----------*/
+
+.preguntas-frecuentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.preguntas-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.preguntas-titulo{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.accordion{
+    width: 80%;
+}
+
+.accordion-button{
+    background-color: var(--color-fondosecundario);
+    color: #fff;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    border: none;
+}
+
+.accordion-body{
+    background-color: #333c49;
+    color: #fff;
+}
+
+
+
+/*Ubicacion*/
+
+.ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ubicacion-main{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin-top: 100px;
+}
+
+.ubicacion-informacion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ubicacion-titulo{
+    display: flex;
+    margin-top: 60px;
+}
+
+.ubicacion-titulo h2, .ubicacion-informacion h2{
+    margin-left: 4px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.ubicacion-informacion p{
+    color: #FFF;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+
+.contenedor-googlemaps iframe{
+    box-shadow: 2px 1px 13px 0px rgba(0,0,0,0.9);
+}
+
+
+/*CONTACTO*/
+
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    background-image: 
+    linear-gradient(180deg, rgba(31, 35, 44, .1) 0%, #1e232b 100%),
+    linear-gradient(0deg, rgba(31, 35, 44, .1) 0%, #1e232b 100%), 
+    url(images/abogacia.jpg);
+    background-size: cover;
+}
+
+.contacto-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+
+.contacto-container h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.contacto-container p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tarjeta-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: var(--color-fondosecundario);
+    padding: 20px;
+    margin: 30px;
+    margin-top: 80px;
+    box-shadow: 2px 1px 13px 0px rgba(0,0,0,0.3);
+    transition: transform .2s ease;
+}
+
+.tarjeta-contacto:hover{
+    transform: translateY(-3px);
+    box-shadow: 2px 1px 13px 0px rgba(0,0,0,0.5);
+}
+
+.tarjeta-contacto img {
+    width: 80px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.tarjeta-contacto p{
+    color: #ccc;
+}
+
+.btn-tarjeta_contacto{
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: transform .2s ease; 
+}
+
+.tarjeta-email{
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-fondosecundario);
+    margin-top: 200px;
+}
+
+.footer-flexcolum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 50px 0;
+
+}
+
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.logo-redes a{
+    margin: 5px;
+}
+
+.logo-footer {
+    width: 260px;
+}
+
+.footer-contacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.footer-contacto h3{
+    margin-bottom: 22px;
+    font-size: 1.5rem;
+}
+
+.footer-contacto h3 a{
+    color: #fff;
+}
+
+.footer-contacto h3 a:hover{
+    color: var(--color-principal)
+}
+
+.contacto-info{
+    display: flex;
+    margin: 5px 0;
+}
+
+.contacto-info img {
+    margin-right: 10px;
+}
+
+.info__contacto h4{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.info__contacto p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.derechos{
+    width: 100%;
+}
+
+.derechos p{
+    text-align: center;
+    margin: 20px;
+}
+
+
+@media screen and (max-width:1100px){
+
+    #menu {
+        display: block;
+        margin: 1em;
+    }
+
+    #cerrar {
+        display: block;
+        font-size: 2.3rem;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    header{
+        display: block;
+    }
+    .header-logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo button{
+        margin-left: 200px;
+    }
+
+    .nav-bar {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: start;
+        position: absolute;
+        top: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+        width: auto;
+        right: -20px;
+        background-color: #1e232b;
+        height: 100vh;
+    }
+
+    .nav-bar.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar ul {
+        display: block;
+        margin-right: 100px;
+
+    }
+
+    .nav-bar ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .nav-bar ul li a{
+        font-size: 1em;
+         
+    }
+
+}
