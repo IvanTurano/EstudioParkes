@@ -84,11 +84,9 @@ cerrar.addEventListener("click",() => {
 })
 
 
-setInterval( () => {
-    if(nav.classList.contains("visible")){
-        nav.classList.remove("visible")
-    }  
-}, 6000)
+nav.addEventListener("click",() => {
+    nav.classList.remove("visible")
+})
 
 
 
