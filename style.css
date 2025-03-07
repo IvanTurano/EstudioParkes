@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
 *{
     margin: 0;
@@ -96,20 +97,46 @@ header{
     color: var(--color-principal);
 }
 
-.btn-nav__contacto{
+.btn-nav__contacto {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-principal);
-    transition: transform .2s ease;
+    padding: 12px 25px;
+    background-image: linear-gradient(to right top, #0096c7, #679cc8, #90a4c5, #abaebf, #bbbbbb);
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.btn-nav__contacto:hover{
-    transform: translateY(-2px);
 
+.btn-nav__contacto:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
 }
 
-.btn-nav__contacto a:hover{
-    color: #ccc !important;
+.btn-nav__contacto a {
+    color: #fff !important;
 }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+}
+
 
 .hero{
     display: flex;
@@ -135,7 +162,7 @@ header{
 
 .hero-titulo h1{
     font-weight: 400;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Cinzel", serif;
     font-size: 7rem;
     color: var(--color-principal);
     text-transform: uppercase;
@@ -772,6 +799,10 @@ footer{
     .nav-bar ul {
         margin-bottom: 0;
     }
+
+    .hero-titulo h1{
+        font-size: 5.8rem;
+    }
 }
 
 
@@ -842,7 +873,7 @@ footer{
     }
 
     .hero-titulo h1{
-        font-size: 6rem;
+        font-size: 5.7rem;
     }
 
     .hero-titulo h2{
@@ -962,16 +993,17 @@ footer{
     }
 
     .hero-titulo h1{
-        font-size: 2.12rem;
+        font-size: 2.0rem;
     }
 
     .hero-titulo h2{
-        font-size: 1rem;
+        font-size: .9rem;
         text-align: center;
     }
 
     .hero-titulo p{
-        font-size: .9rem;
+        font-size: .7rem;
+        margin: 5px 0;
     }
 
     .especialidades h2 {
