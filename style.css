@@ -810,14 +810,7 @@ footer{
         align-items: center;
         justify-content: center;
     }
-
-    .contenedor-googlemaps{
-        width: 700px;
-    }
-
-    .contenedor-googlemaps iframe{
-        width: 700px;
-    }
+    
 }
 
 @media screen and (max-width:1405px){
