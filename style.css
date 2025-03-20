@@ -601,7 +601,7 @@ header{
     linear-gradient(180deg, rgba(31, 35, 44, .1) 0%, #1e232b 100%),
     linear-gradient(0deg, rgba(31, 35, 44, .1) 0%, #1e232b 100%), 
     url(images/contacto.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
