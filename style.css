@@ -727,6 +727,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    width: 80%;
 }
 
 .footer-contacto h3{
