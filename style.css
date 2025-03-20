@@ -142,7 +142,6 @@ header{
     padding: 6px 15px;
     margin-top: 20px;
     background-color: #80ed99;
-    background-color: var(--color-principal);
     color: #fff !important;
     font-size: 1rem;
     text-transform: uppercase;
@@ -810,7 +809,7 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    
+
 }
 
 @media screen and (max-width:1405px){
@@ -901,6 +900,10 @@ footer{
     .nav-bar ul li a{
         font-size: 1em;
          
+    }
+
+    .btn-nav__contacto{
+        display: none !important;
     }
 
     .hero-titulo h1{
