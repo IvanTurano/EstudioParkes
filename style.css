@@ -100,7 +100,7 @@ header{
 .btn-nav__contacto {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #80ed99;
+    background-color: #35f161;
     color: #fff !important;
     font-weight: bold;
     font-size: 1.2rem;
@@ -141,7 +141,7 @@ header{
     display: none;
     padding: 6px 15px;
     margin-top: 20px;
-    background-color: #80ed99;
+    background-color: #35f161;
     color: #fff !important;
     font-size: 1rem;
     text-transform: uppercase;
