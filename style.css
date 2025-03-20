@@ -951,6 +951,13 @@ footer{
     .contenedor-footer {
         width: 90%;
     }
+
+    .contacto{
+        background-image: 
+            linear-gradient(180deg, rgba(31, 35, 44, .1) 0%, #1e232b 100%),
+            linear-gradient(0deg, rgba(31, 35, 44, .1) 0%, #1e232b 100%), 
+            url(images/contacto-phone.jpg);
+    }
 }
 
 @media screen and (max-width:715px){
@@ -982,6 +989,8 @@ footer{
     .tarjetas-container{
         width: auto;
     }
+
+    
 }
 
 @media screen and (max-width:480px){
@@ -991,7 +1000,7 @@ footer{
     }
 
     .contenedor-googlemaps iframe{
-        width: 300px;
+        width: 360px;
     }
 
     .hero-titulo h1{
